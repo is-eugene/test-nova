@@ -1,0 +1,45 @@
+.l-footer {
+	padding-top: 27px;
+	padding-bottom: 50px;
+	color: #FFF;
+	background: $slate;
+	a {
+		color: #FFF;
+	}
+}
+.l-footer__logo {
+	margin-top: 7px;
+	display: block;
+	margin-bottom: 10px;
+}
+.l-footer__copyright {
+	line-height: 1.43em;
+}
+.txt-list-items__title {
+	font-weight: bold;
+	&.-top {
+		margin-bottom: 10px;
+	}
+}
+.txt-list-items {
+	margin-bottom: 10px;
+}
+.l-footer__contacts {
+	width: 170px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	.link-wrap {
+		margin-bottom: 15px;
+		a {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.43;
+			color: $blue-dop-2;
+		}
+	}
+	.link-wrap__sub {
+		font-size: 12px;
+		line-height: 1.67;
+	}
+}

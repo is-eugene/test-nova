@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Оптовый магазин НоваТур</title>
+
+    <link href="/frontend/build/vendor.css" rel="stylesheet">
+    <link href="/frontend/build/pages/index/auth/app.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="l-wrapper">
+  <div class="l-site-wrapper">
+    <div class="l-heading-line">
+      <div class="container">
+        <div class="row justify-content-between">
+					<div class="col-md-4">
+						<div class="preorder-status">
+							<a class="title" href="#">Предзаказ 2018</a>
+							<div class="status">Предзаказ доступен</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="c-user-balans">
+							<div class="c-user-balans__title">Ваш баланс:</div>
+							<div class="c-user-balans__value c-user-balans__value--overdue">
+								<span class="number-value">-123 200 Р</span>
+								<span class="text-detail">(Просрочка!)</span>
+							</div>
+						</div>
+					</div>
+          <div class="col-md-3 h-text-right">
+            <div class="с-user-login с-user-login--hidden">
+              <a href="#" class="с-user-login__link js-user-login">
+                <i class="icon-burger"></i>
+                Василенко Алексей Сергеевич
+              </a>
+              <div class="с-user-login__form">
+                <ul class="с-user-login__form-links h-no-mark">
+                	<li><a class="c-info-tile__link" href="/personal"><span class="icon-user2"></span><span>Данные пользователя</span></a></li>
+                	<li><a class="c-info-tile__link" href="/personal/orders"><span class="icon-orders"></span><span>Заказы</span></a></li>
+                	<li ><a class="c-info-tile__link" href="/personal/contractors"><span class="icon-portfolio"></span><span>Юр. лица</span></a></li>
+                	<li ><a class="c-info-tile__link" href="/personal/employees"><span class="icon-employ"></span><span>Сотрудники</span></a></li>
+                	<li ><a class="c-info-tile__link" href="/personal/delivery_addresses"><span class="icon-delivery-dark"></span><span>Адреса доставки</span></a></li>
+                	<li ><a class="c-info-tile__link" href="/personal/files"><span class="icon-folder"></span><span>Скачать файлы</span></a></li>
+                	<li ><a class="c-info-tile__link" href="/personal/api"><span class="icon-service"></span><span>Интеграция по API (Выгрузки, Обмены)</span></a></li>
+                	<li ><a class="c-info-tile__link" href="/logout"><span class="icon-service"></span><span>Выйти</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="l-header container">
+      <div class="l-header__top row">
+        <div class="l-site-logo col-sm-6 col-md-3 col-lg-2 mb-2 mb-md-0">
+          <a href="/">
+            <img src="svg/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="c-main-search-form c-main-search-form--auth col-md-6 col-lg-8 mb-2 mb-md-0">
+          <form action="/search" class="d-flex">
+            <input class="c-main-search-form__input js-search h-disable-ui" id="search" type="search" name="q">
+            <label class="c-main-search-form__label js-label"
+                   for="search">Введите ключевое слово, например, <b>Рюкзак</b>
+            </label>
+            <button type="submit" class="bttn bttn--dark bttn--mid bttn--bl-none">Найти</button>
+          </form>
+          <div class="c-main-user-actions">
+	          <ul class="h-no-mark">
+	          	<li>
+	          		<a href="#"><span class="icon-wishlist"></span>Избранное</a>
+	          	</li>
+	          	<li>
+	          		<a href="#"><span class="icon-compare"></span>Сравнить</a>
+	          	</li>
+	          </ul>
+	        </div>
+        </div>
+        <div class="l-header__telephone col-md-4 col-lg-2">
+          <a href="tel:+7-495-984-08-50"><span>+7 495</span> 984-08-50</a>
+        </div>
+      </div>
+      <div class="l-main-menu-wrap d-flex">
+        <div class="l-main-menu">
+          <ul class="l-main-menu__root h-no-mark">
+            <li class="l-main-menu__item l-main-menu__item--can-expand">
+              <a class="l-main-menu__item-top" href="/catalog">Каталог</a>
+              <ul class="l-main-menu__item-sub h-no-mark">
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Палатки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Рюкзаки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Спальники</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Коврики</a>
+                </li>
+                <li class="l-main-menu__item-sub__item l-main-menu__item__sub-item--can-expand">
+
+                  <a class="sub-item__link" href="#">Одежда</a>
+                  <div class="l-main-menu__item-sub-inner d-flex">
+                    <ul class="l-main-menu__item-sub__second h-no-mark">
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Костюмы зимние</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Костюмы летние</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Костюмы демисезонные</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Куртки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Брюки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item l-main-menu__item-sub-second-item--can-expand">
+                        <a class="sub-second-item__link" href="#">Термобелье</a>
+                        <ul class="l-main-menu__item-sub-third h-no-mark">
+                          <li class="l-main-menu__item-sub-third-item">
+                            <a href="#">Верхняя часть термобелья</a>
+                          </li>
+                          <li class="l-main-menu__item-sub-third-item">
+                            <a href="#">Нижняя часть термобелья</a>
+                          </li>
+                          <li class="l-main-menu__item-sub-third-item">
+                            <a href="#">Комплекты</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Верхняя часть термобелья</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Жилеты</a>
+                      </li>
+                    </ul>
+                    <ul class="l-main-menu__item-sub__second h-no-mark">
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Рубашки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Ветровлагозащита</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Головные уборы</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Перчатки, варежки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Носки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Аксессуары для одежды</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Газовое оборудование</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Посуда</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Гермомешки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Сумки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Тенты и шатры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="l-main-menu__item l-main-menu__item--can-expand">
+              <a class="l-main-menu__item-top" href="#">Бренды</a>
+              <div class="l-main-menu__item-sub d-flex -full-width">
+	              <ul class="h-no-mark">
+	              	<li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">NOVA TOUR</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">GREENELL</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">FISHERMAN</a>
+	                </li>
+	              </ul>
+	              <ul class="h-no-mark">
+	              	<li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">KOVEA</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">GUAHOO</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">HUNTERMAN</a>
+	                </li>
+	              </ul>
+	              <ul class="h-no-mark">
+	              	<li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">NORDMAN</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">HUNTSMAN</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">ДЮНА</a>
+	                </li>
+	              </ul>
+	              <ul class="h-no-mark">
+	              	<li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">LAPLANDIC </a>
+	                </li>
+	              </ul>
+	            </div>
+            </li>
+            <li class="l-main-menu__item l-main-menu__item--can-expand -left-position">
+              <a class="l-main-menu__item-top" href="#">Направления</a>
+              <div class="l-main-menu__item-sub d-flex">
+	              <ul class="h-no-mark">
+	              	<li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">Туризм</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">Охота</a>
+	                </li>
+	                <li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">Рыбалка</a>
+	                </li>
+	              </ul>
+	              <ul class="h-no-mark">
+	              	<li class="l-main-menu__item-sub__item">
+	                  <a class="sub-item__link" href="#">Кемпинг</a>
+	                </li>
+	              </ul>
+	            </div>
+            </li>
+            <li class="l-main-menu__item">
+              <a class="l-main-menu__item-top" href="#">Сервисы</a>
+            </li>
+            <li class="l-main-menu__item">
+              <a class="l-main-menu__item-top" href="#">Поддержка</a>
+            </li>
+            <li class="l-main-menu__item">
+              <a class="l-main-menu__item-top" href="#">Обучение</a>
+            </li>
+            <li class="l-main-menu__item">
+              <a class="l-main-menu__item-top" href="#">О компании</a>
+            </li>
+          </ul>
+        </div>
+        <div class="l-main-menu-aside">
+          <a href="/register" class="bttn bttn--bl-none">Сделать заказ</a>
+        </div>
+      </div>
+    </header>
+    <main class="l-site">
+    	<div class="container">
+	      <div class="l-content p-front-auth">
+					<div class="p-front-auth__help-links c-info-section">
+						<div class="row">
+							<div class="col-md-3 mb-2 mb-md-0">
+								<a href="" class="bttn bttn--big bttn--lime"><span class="icon-bag"></span>Сделать заказ</a>
+							</div>
+							<div class="col-md-3 mb-2 mb-md-0">
+								<a href="" class="bttn bttn--big bttn--light-orange"><span class="icon-orders"></span>Мои заказы</a>
+							</div>
+							<div class="col-md-3 mb-2 mb-md-0">
+								<a href="" class="bttn bttn--big bttn--light-blue"><span class="icon-settlements"></span>Взаиморасчеты</a>
+							</div>
+							<div class="col-md-3">
+								<a href="" class="bttn bttn--big bttn--light-gray"><span class="icon-preorder"></span>Предзаказ</a>
+							</div>
+						</div>
+					</div>
+	        <div class="c-info-section c-card c-card--banner">
+	        	<img src="img/front-banner.jpg" alt="">
+	        </div>
+					
+					<div class="c-info-tiles">
+						<div class="c-info-tile">
+							<div class="row">
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-xlsx"></span>Скачать бланк заказа (xlsx)</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-rules"></span>Коммерческие условия</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-delivery-dark"></span>Доставка</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-news"></span>Новости</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-xlsx"></span>Бланк спецпредложения (xlsx)</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-calc"></span>Калькулятор скидки</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-payment"></span>Оплата</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-folder"></span>Документы</a>
+								</div>
+								<div class="col-md-3 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-xlsx"></span>CSV остатки</a>
+								</div>
+							</div>
+							<div class="c-info-tile__all">
+								<a href="#">Все файлы</a>
+							</div>
+						</div>
+
+						<div class="c-info-tile">
+							<h3 class="c-info-tile__title">Личный кабинет</h3>
+							<div class="row">
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-user2"></span>Данные пользователя</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-portfolio"></span>Юридические лица</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="c-info-tile__link"><span class="icon-employ"></span>Сотрудники</a>
+								</div>
+							</div>
+						</div>
+						<div class="c-info-tile">
+							<h3 class="c-info-tile__title">Поддержка</h3>
+							<div class="row">
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-clock"></span>Как сделать заказ?</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-guide"></span>Как пользоваться сайтом?</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="c-info-tile__link"><span class="icon-care"></span>Рекомендации по уходу</a>
+								</div>
+							</div>
+						</div>
+						<div class="c-info-tile">
+							<h3 class="c-info-tile__title">Обучение</h3>
+							<div class="row">
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-webinars"></span>Вебинары по ассортименту</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-tech"></span>Заказать обучение по ассортименту</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="c-info-tile__link"><span class="icon-service"></span>Материалы и технолоигии</a>
+								</div>
+							</div>
+						</div>
+						<div class="c-info-tile">
+							<h3 class="c-info-tile__title">Рекламные материалы</h3>
+							<div class="row">
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-pos"></span>POS материалы</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-soc"></span>Картинки для соц сетей</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="c-info-tile__link"><span class="icon-video"></span>Видео</a>
+								</div>
+							</div>
+						</div>
+						<div class="c-info-tile">
+							<h3 class="c-info-tile__title">О компании</h3>
+							<div class="row">
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-contacts"></span>Контакты</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-storage"></span>Склад</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-folder"></span>Документы</a>
+								</div>
+								<div class="col-md-4 mb-2 mb-md-0">
+									<a href="#" class="c-info-tile__link"><span class="icon-news"></span>Новости</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#" class="c-info-tile__link"><span class="icon-policy"></span>Политика РРЦ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+	      </div>
+	    </div>
+    </main>
+  </div>
+  <footer class="l-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-2 mb-2 mb-md-0">
+          <a class="l-footer__logo">
+            <img src="svg/logo-white.svg" alt="">
+          </a>
+          <div class="l-footer__copyright">ООО «Нова Тур»<br /> © 2017</div>
+        </div>
+        <div class="col-md-3 mb-2 mb-md-0">
+          <div class="txt-list-items-wrap">
+          	<div class="txt-list-items__title -top">Обратная связь</div>
+            <div class="txt-list-items__title">Отдел сопровождения продаж</div>
+            <ul class="txt-list-items h-no-mark">
+              <li><a href="tel:+7(495)984-08-50">+7(495) 984-08-50</a></li>
+              <li><a href="mailto:info@novatour.ru">info@novatour.ru</a></li>
+            </ul>
+            <div class="txt-list-items__title">Техподдержка</div>
+            <ul class="txt-list-items h-no-mark">
+              <li><a href="#">Как заказать?</a></li>
+              <li><a href="#">Как пользоваться?</a></li>
+            </ul>
+            <a href="mailto:help@novatour.ru" class="txt-list-items__title">help@novatour.ru</a>
+          </div>
+        </div>
+        <div class="col-md-2 mb-2 mb-md-0">
+          <div class="txt-list-items-wrap">
+            <div class="txt-list-items__title -top">Сервисы</div>
+            <ul class="txt-list-items h-no-mark">
+              <li><a href="#">Сервисы</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Калькулятор скидки</a></li>
+              <li><a href="#">Выгрузки</a></li>
+              <li><a href="#">Интеграция по API</a></li>
+              <li><a href="#">Обучение по ассортименту</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-md-0">
+          <div class="txt-list-items-wrap">
+            <div class="txt-list-items__title -top">Документы</div>
+            <ul class="txt-list-items h-no-mark">
+              <li><a href="#">Учредительные документы</a></li>
+              <li><a href="#">Прайс лист</a></li>
+              <li><a href="#">Политика РРЦ</a></li>
+              <li><a href="#">Оферта</a></li>
+              <li><a href="#">Интеграция по API</a></li>
+              <li><a href="#">Гарантийные обязательства</a></li>
+              <li><a href="#">Политика конфидициальности</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 h-text-right">
+          <div class="l-footer__contacts">
+            <div class="link-wrap">
+              <a href="http://novatour.ru" target="_blank">novatour.ru</a>
+              <div class="link-wrap__sub">Розничный сайт<br/> NOVA TOUR</div>
+            </div>
+            <div class="c-socials d-flex">
+              <a href="#" class="c-social__item c-social__item--vk"></a>
+              <a href="#" class="c-social__item c-social__item--fb"></a>
+              <a href="#" class="c-social__item c-social__item--you"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script type="text/javascript" src="/frontend/build/manifest.js"></script>
+<script type="text/javascript" src="/frontend/build/vendor.js"></script>
+<script type="text/javascript" src="/frontend/build/pages/index/auth/app.js"></script>
+</body>
+</html>

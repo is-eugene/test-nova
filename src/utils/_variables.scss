@@ -1,0 +1,79 @@
+$base-font: 15px/1.67em Open Sans, Helvetica, sans-serif;
+
+/* Font-sizes */
+/* Desctop */
+$h1FS: 40px;
+$h2FS: 35px;
+$h3FS: 26px;
+$h4FS: 18px;
+$h5FS: 16px;
+$h6FS: 16px;
+
+$h1-heading-FS: 65px;
+$h2-heading-FS: 50px;
+$h3-heading-FS: 36px;
+$h4-heading-FS: 30px;
+
+/* Tablet */
+$tablet_h1FS: 36px;
+$tablet_h2FS: 30px;
+$tablet_h3FS: 18px;
+$tablet_h4FS: 16px;
+$tablet_h5FS: 16px;
+$tablet_h6FS: 16px;
+/* Mobile */
+$phone_h1FS: 24px;
+$phone_h2FS: 18px;
+$phone_h3FS: 16px;
+$phone_h4FS: 14px;
+$phone_h5FS: 14px;
+$phone_h6FS: 14px;
+
+/* Colors */
+$blue-grey: #8798ab;
+$pale-grey: #f3f5f9;
+$slate: #4f5f72;
+$light-grass-green: #84f16a;
+$mid-green: #5cb746;
+$cerulean: #0095d1;
+
+$body-bgr: #fbfbfb;
+$langing-h-color: #2a4153;
+$blue: #0583be;
+$blue-dop: #0b4896;
+$blue-dop-2: #99dbfa;
+$text-dark-gray: #314359;
+$text-gray: #4a4a4a;
+$menu-hover-text: #496074;
+$red: #d0021b;
+$base-link-hover: #38b11a;
+$base-border-color: rgba(216, 216, 216, .4);
+
+/* Radiuses */
+$base-border-radius: 3px;
+
+/* auth icons */
+$auth-icons: (
+	'icon-calc',
+	'icon-care',
+	'icon-clock',
+	'icon-contacts',
+	'icon-delivery-dark',
+	'icon-employ',
+	'icon-folder',
+	'icon-guide',
+	'icon-news',
+	'icon-payment',
+	'icon-policy',
+	'icon-portfolio',
+	'icon-pos',
+	'icon-rules',
+	'icon-service',
+	'icon-soc',
+	'icon-storage',
+	'icon-tech',
+	'icon-user2',
+	'icon-video',
+	'icon-webinars',
+	'icon-xlsx'
+	);

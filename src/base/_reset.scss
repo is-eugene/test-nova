@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: $base-font;
+  background-color: $body-bgr;
+  color: #000;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+}
+blockquote {
+  margin: 25px 0 30px;
+  .quote-author-img {
+    flex: 0 0 88px;
+    margin-right: 29px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      display: block;
+    }
+  }
+  p {
+    font-size: 12px;
+    line-height: 17px;
+    font-style: italic;
+    margin-bottom: 0;
+    &.quote__content-author {
+      font-weight: bold;
+    }
+  }
+}

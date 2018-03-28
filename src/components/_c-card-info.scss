@@ -1,0 +1,17 @@
+.c-card-info__image {
+	margin-bottom: 25px;
+	overflow: hidden;
+	border-radius: $base-border-radius;
+	img {
+		display: block;
+	}
+}
+.c-card-info__date {
+	color: #000;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.c-card-info__title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}

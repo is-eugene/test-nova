@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Оптовый магазин НоваТур</title>
+
+    <link href="/frontend/build/vendor.css" rel="stylesheet">
+    <link href="/frontend/build/pages/index/noauth/app.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="l-wrapper">
+  <div class="l-site-wrapper">
+    <div class="l-heading-line">
+      <div class="container">
+        <div class="row justify-content-md-end">
+          <div class="col-md-3 h-text-right">
+            <div class="с-user-login с-user-login--hidden">
+              <a href="#" class="с-user-login__link js-user-login">
+                <i class="icon-user"></i>
+                Личный кабинет
+              </a>
+              <div class="с-user-login__form">
+                <form id="nova_user_bundle_login_form_ajax" action="/login_ajax" method="post">
+                  <div class="f-row">
+                    <input type="email"
+                           id="nova_user_bundle_login_form_ajax_username"
+                           name="nova_user_bundle_login_form_ajax[username]"
+                           value=""
+                           placeholder="E-mail"
+                           autocorrect="off"
+                           autocapitalize="off"
+                           required />
+                  </div>
+                  <div class="f-row">
+                    <input type="password"
+                           id="nova_user_bundle_login_form_ajax_password"
+                           name="nova_user_bundle_login_form_ajax[password]"
+                           value=""
+                           placeholder="Пароль"
+                           autocorrect="off"
+                           autocapitalize="off"
+                           required />
+                  </div>
+                  <div class="form-row form-row--actions">
+                    <button type="submit"
+                            id="nova_user_bundle_login_form_ajax_submit"
+                            class="bttn bttn--gray bttn--min bttn--dark"
+                            name="nova_user_bundle_login_form_ajax[submit]">Войти
+                    </button>
+                    <a href="/register" class="bttn bttn--min">Зарегистроваться</a>
+                  </div>
+                </form>
+                <a href="/forgot" class="с-user-login__forgotten">Забыли пароль?</a>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="l-header container">
+      <div class="l-header__top row">
+        <div class="l-site-logo col-sm-6 col-md-3 col-lg-2 mb-2 mb-md-0">
+          <a href="/">
+            <img src="svg/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="c-main-search-form col-md-6 col-lg-8 mb-2 mb-md-0">
+          <form action="/search" class="d-flex">
+            <input class="c-main-search-form__input js-search h-disable-ui" id="search" type="search" name="q">
+            <label class="c-main-search-form__label js-label"
+                   for="search">Введите ключевое слово, например, <b>Рюкзак</b>
+            </label>
+            <button type="submit" class="bttn bttn--dark bttn--mid bttn--bl-none">Найти</button>
+          </form>
+        </div>
+        <div class="l-header__telephone col-md-4 col-lg-2">
+          <a href="tel:+7-495-984-08-50"><span>+7 495</span> 984-08-50</a>
+        </div>
+      </div>
+      <div class="l-main-menu-wrap d-flex">
+        <div class="l-main-menu">
+          <ul class="l-main-menu__root h-no-mark">
+            <li class="l-main-menu__item l-main-menu__item--can-expand">
+              <a class="l-main-menu__item-top" href="/catalog">Каталог</a>
+              <ul class="l-main-menu__item-sub h-no-mark">
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Палатки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Рюкзаки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Спальники</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Коврики</a>
+                </li>
+                <li class="l-main-menu__item-sub__item l-main-menu__item__sub-item--can-expand">
+
+                  <a class="sub-item__link" href="#">Одежда</a>
+                  <div class="l-main-menu__item-sub-inner d-flex">
+                    <ul class="l-main-menu__item-sub__second h-no-mark">
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Костюмы зимние</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Костюмы летние</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Костюмы демисезонные</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Куртки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Брюки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item l-main-menu__item-sub-second-item--can-expand">
+                        <a class="sub-second-item__link" href="#">Термобелье</a>
+                        <ul class="l-main-menu__item-sub-third h-no-mark">
+                          <li class="l-main-menu__item-sub-third-item">
+                            <a href="#">Верхняя часть термобелья</a>
+                          </li>
+                          <li class="l-main-menu__item-sub-third-item">
+                            <a href="#">Нижняя часть термобелья</a>
+                          </li>
+                          <li class="l-main-menu__item-sub-third-item">
+                            <a href="#">Комплекты</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Верхняя часть термобелья</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Жилеты</a>
+                      </li>
+                    </ul>
+                    <ul class="l-main-menu__item-sub__second h-no-mark">
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Рубашки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Ветровлагозащита</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Головные уборы</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Перчатки, варежки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Носки</a>
+                      </li>
+                      <li class="l-main-menu__item-sub-second-item">
+                        <a class="sub-second-item__link" href="#">Аксессуары для одежды</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Газовое оборудование</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Посуда</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Гермомешки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Сумки</a>
+                </li>
+                <li class="l-main-menu__item-sub__item">
+                  <a class="sub-item__link" href="#">Тенты и шатры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="l-main-menu__item l-main-menu__item--can-expand">
+              <a class="l-main-menu__item-top" href="#">Бренды</a>
+              <div class="l-main-menu__item-sub d-flex -full-width">
+                <ul class="h-no-mark">
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">NOVA TOUR</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">GREENELL</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">FISHERMAN</a>
+                  </li>
+                </ul>
+                <ul class="h-no-mark">
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">KOVEA</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">GUAHOO</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">HUNTERMAN</a>
+                  </li>
+                </ul>
+                <ul class="h-no-mark">
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">NORDMAN</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">HUNTSMAN</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">ДЮНА</a>
+                  </li>
+                </ul>
+                <ul class="h-no-mark">
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">LAPLANDIC </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="l-main-menu__item l-main-menu__item--can-expand -left-position">
+              <a class="l-main-menu__item-top" href="#">Направления</a>
+              <div class="l-main-menu__item-sub d-flex">
+                <ul class="h-no-mark">
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">Туризм</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">Охота</a>
+                  </li>
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">Рыбалка</a>
+                  </li>
+                </ul>
+                <ul class="h-no-mark">
+                  <li class="l-main-menu__item-sub__item">
+                    <a class="sub-item__link" href="#">Кемпинг</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="l-main-menu__item">
+              <a class="l-main-menu__item-top" href="#">Приглашаем к сотрудничеству</a>
+            </li>
+            <li class="l-main-menu__item">
+              <a class="l-main-menu__item-top" href="#">Розничным покупателям</a>
+            </li>
+          </ul>
+        </div>
+        <div class="l-main-menu-aside">
+          <a href="/register" class="bttn bttn--bl-none">Стать партнером</a>
+        </div>
+      </div>
+    </header>
+    <main class="l-site">
+      <div class="l-content p-front">
+        <div class="p-front-invitation">
+          <div class="container">
+            <div class="p-front-invitation__bgr-wrap">
+              <img src="img/front-invitation-bgr.jpg" class="p-front-invitation__bgr">
+            </div>
+            <div class="row">
+              <div class="p-front-invitation-text col-lg-8 col-md-10">
+                <h1 class="s-landing">Приглашаем<br/> к сотрудничеству</h1>
+                <p>Компания «НОВА ТУР» профессионально занимается дистрибуцией, а также собственным производством и продажей товаров для туризма, охоты, рыбалкии отдыха на природе.</p>
+              </div>
+            </div>
+            <div class="p-front-invitation-slogan">
+              <p>Наша <span class="h-lbr">миссия:</span> сделать активный отдых доступным для всех жителей России!</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-front__destinations">
+          <div class="container">
+            <div class="row">
+              <div class="p-front__destinations-item col-md-4 mb-2 mb-md-0">
+                <h4 class="s-landing">Дистрибьюция</h4>
+                <p>Полная ассортиментная матрица для вашего магазина в наличии на складе.</p>
+              </div>
+              <div class="p-front__destinations-item col-md-4 mb-2 mb-md-0">
+                <h4 class="s-landing">Собственное производство</h4>
+                <p>Торговые марки NOVA TOUR, Greenell, Fisherman проверены профессионалами отрасли.</p>
+              </div>
+              <div class="p-front__destinations-item col-md-4 mb-2 mb-md-0">
+                <h4 class="s-landing">IT решения</h4>
+                <p>Сервис заказа XXI века. Остатки, заказы и статусы документов доступны онлайн.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-front__destinations-detail c-info-section c-info-section--blue">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-2 mb-md-0 pr-0">
+                <div class="p-front__destinations-detail-chain">
+                  <p>Cнижаем расходы в цепочке</p>
+                  <div class="chain-items">Производитель → Дистрибутор → Магазин → Покупатель</div>
+                  <a href="#" class="bttn bttn--bolder">Стать партнером</a>
+                </div>
+              </div>
+              <div class="col-md-6 p-front__destinations-detail-short">
+                <p class="intro">Для этого мы автоматизировали каждый шаг цепочки и создали службу «одного окна»</p>
+                <div class="p-front__destinations-points d-flex flex-wrap justify-content-between">
+                  <div class="destination-point">
+                    <i class="icon-company"></i>
+                    <p>Одна компания-поставщик</p>
+                  </div>
+                  <div class="destination-point">
+                    <i class="icon-discounts"></i>
+                    <p>Общая накопительная система скидок</p>
+                  </div>
+                  <div class="destination-point">
+                    <i class="icon-site"></i>
+                    <p>Один сайт<br/> с данными о товарах</p>
+                  </div>
+                  <div class="destination-point">
+                    <i class="icon-logistic"></i>
+                    <p>Общий логистический сервис</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="c-info-section">
+            <h2 class="s-landing c-info-section__title">Как начать работу</h2>
+            <p class="c-info-section__teaser">Отправьте заявку на сайте, введите ИНН своей компании — и всё, можно заказывать по оптовым ценам. Не нужно подписывать договор и вносить депозит.</p>
+            <div class="c-info-section__img">
+              <img src="img/banner-customer-scheme.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="c-info-section c-info-section--blue">
+          <div class="container">
+            <h2 class="s-landing c-info-section__title">Бренды</h2>
+            <p class="c-info-section__teaser">Более 10 востребованных брендов дополняют друг друга до полной ассортиментной матрицы. Мы контролируем ассортимент и предлагаем только ликвидные товары.</p>
+            <div class="swiper-container-wrap">
+              <div class="front-manufacturers-slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                  <div class="c-card-tiny swiper-slide">
+                    <a href="#">
+                      <div class="c-card-tiny__image">
+                        <img src="img/fishman.jpg" alt="">
+                      </div>
+                      <div class="c-card-tiny__title">FISHERMAN</div>
+                      <p class="c-card-tiny__descr">Одежда для профессиональных рыбаков, Россия</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="c-info-section">
+            <h2 class="c-info-section__title s-landing">Наши преимущества</h2>
+            <p class="c-info-section__teaser">Каждый наш клиент встретит в компании «НОВА ТУР» индивидуальный подход и профессиональную поддержку продаж.</p>
+             <div class="c-card">
+               <div class="row align-items-stretch">
+                 
+                 <div class="c-card__content col-md-7">
+                   <h3 class="s-landing">Интернет-магазинам</h3>
+                   <p class="intro">Быстрый старт для быстрых продаж</p>
+                   <ul class="s-smaller">
+                     <li><p>Выгрузки каталога в формате CML или YML. Обновление остатков — каждые 5 минут</p></li>
+                     <li><p>Бесплатная услуга «Примерка»: товары разных размеров на выбор с бесплатным возвратом</p></li>
+                     <li><p>Резервируем товар на пять дней без предоплаты</p></li>
+                     <li><p>Принимаем заказы через сайт от 1 позиции круглосуточно 7 дней в неделю с любого доступного устройства</p></li>
+                   </ul>
+                   <blockquote class="d-flex align-items-center">
+                     <div class="quote-author-img">
+                       <img src="img/review-author-1.jpg" alt="">
+                     </div>
+                     <div class="quote__content">
+                       <p>Благодаря товарам NOVA TOUR я заработал первый миллион в интернете и раскрутил канал Youtube на 70000 подписчиков.</p>
+                       <p class="quote__content-author">Денис Доропей, основатель интернет-магазина Palatok.ru</p>
+                     </div>
+                   </blockquote>
+                   <a href="#" class="bttn bttn--bolder">Стать партнером</a>
+                 </div>
+                 <div class="c-card__fixed-img fixed-img--right col-md-5">
+                   <img src="img/img-destiny-eshop.jpg" alt="">
+                 </div>
+               </div>
+             </div>
+             <div class="c-card">
+               <div class="row">
+                <div class="c-card__fixed-img fixed-img--left col-md-5">
+                   <img src="img/img-destiny-rshop.jpg" alt="">
+                 </div>
+                 <div class="c-card__content col-md-7">
+                   <h3 class="s-landing">Розничным магазинам</h3>
+                   <p class="intro">Простые закупки и управление ассортиментом</p>
+                   <ul class="s-smaller">
+                     <li><p>Предзказ. Планируйте (фиксируйте) ассортимент на полках вашего магазина каждый нового сезона. Получите дополнительно до 5% от основной оптовой цены на весь ассортимент</p></li>
+                     <li><p>Качество сборки заказа на складе. Гарантируем 99,99% качества комплектации: 1 ошибка на 50 000 сборок</p></li>
+                     <li><p>Служба качества. Решаем по качеству и количеству в течение суток</p></li>
+                     <li><p>Бесплатная доставка от 15 000 рублей до ТК или вашего склада в Москве</p></li>
+                   </ul>
+                   <blockquote class="d-flex align-items-center">
+                     <div class="quote-author-img">
+                       <img src="img/review-author-2.jpg" alt="">
+                     </div>
+                     <div class="quote__content">
+                       <p>С компанией «НОВА ТУР» мы работаем уже более 10 лет. В последние годы компания взяла сторонние ТМ на дистрибуцию. За счет этого мы сократили расходы на логистику, упростили процесс закупок, автоматизировали контроль отгрузок.</p>
+                       <p class="quote__content-author">Алексей Блинов, заместитель директора, ООО «Буран», г. Муром</p>
+                     </div>
+                   </blockquote>
+                   <a href="#" class="bttn bttn--bolder">Стать партнером</a>
+                 </div>
+               </div>
+             </div>
+             <div class="c-card">
+               <div class="row">
+                 <div class="c-card__content col-md-7">
+                   <h3 class="s-landing">Дистрибуторам</h3>
+                   <p class="intro">Популярные бренды по ценам производителя</p>
+                   <ul class="s-smaller">
+                     <li><p>Максимальные скидки на бренды NOVA TOUR, Greenell, Fisherman, Hunterman</p></li>
+                     <li><p>Прямая поставка из Китая и стран Юго-Восточной Азии. Мы можем доставить ваш заказ напрямую с фабрики</p></li>
+                     <li><p>Возврат непроданного товара</p></li>
+                     <li><p>Ваша контактная информация на нашем оптовом сайте</p></li>
+                   </ul>
+                   <blockquote class="d-flex align-items-center">
+                     <div class="quote-author-img">
+                       <img src="img/review-author-3.jpg" alt="">
+                     </div>
+                     <div class="quote__content">
+                       <p>Работаем с НОВА ТУР с 2013 года как дистрибутор. Нравится товар. Нравится соблюдение договорённостей, лояльность. За все время работы ошибкии сбои можно пересчитать по пальцам одной руки. Рассчитываем на долгое сотрудничество.</p>
+                       <p class="quote__content-author">Дроздов Дмитрий - руководитель отдела закупок ТК «Внутренние Горы» г. Санкт-Петербург</p>
+                     </div>
+                   </blockquote>
+                   <a href="#" class="bttn bttn--bolder">Получить условия</a>
+                 </div>
+                 <div class="c-card__fixed-img fixed-img--right col-md-5">
+                   <img src="img/img-destiny-distrib.jpg" alt="">
+                 </div>
+               </div>
+             </div>
+             <div class="c-card">
+               <div class="row">
+                <div class="c-card__fixed-img fixed-img--left col-md-5">
+                   <img src="img/img-destiny-giper.jpg" alt="">
+                 </div>
+                 <div class="c-card__content col-md-7">
+                   <h3 class="s-landing">Федеральным сетям и гипермаркетам</h3>
+                   <p class="intro">Профессиональное сотрудничество</p>
+                   <ul class="s-smaller">
+                     <li><p>Индивидуальные цены и ассортиментное предложение, эксклюзивные модели</p></li>
+                     <li><p>Ретробонусы за выполнение плана продаж</p></li>
+                     <li><p>Работа по вашим бизнес-процессам купли-продажи</p></li>
+                     <li><p>Полный пакет документов по юрлицу. Мы собрали список из 30 документов для проверки самой придирчивой службы безопасности!</p></li>
+                   </ul>
+                   <blockquote class="d-flex align-items-center">
+                     <div class="quote-author-img">
+                       <img src="img/review-author-4.jpg" alt="">
+                     </div>
+                     <div class="quote__content">
+                       <p>Компания НОВА ТУР предложила нам уникальные товары, которые не входят в регулярный ассортимент. ИТ-отдел компании подготовил по нашему шаблону выгрузку каталога и остатков в формате XML. А наш менеджер Николай Писарев разработал и внедрил индивидуальную систему скидок и ретробонусов.</p>
+                       <p class="quote__content-author">Максим Бодренко, Категорийный менеджер магазина Ozon.ru</p>
+                     </div>
+                   </blockquote>
+                   <a href="#" class="bttn bttn--bolder">Стать партнером</a>
+                 </div>
+               </div>
+             </div>
+             <div class="c-card">
+               <div class="row">
+                 <div class="c-card__content col-md-7">
+                   <h3 class="s-landing">Производителям</h3>
+                   <p class="intro">Доступ к каналам сбыта компании «НОВА ТУР»</p>
+                   <ul class="s-smaller">
+                     <li><p>Более 2900 партнёров: гипермаркеты, региональные дистрибуторы, розничные точки и интернет-магазины, получаемые доступ к вашей продукции. Бесплатная услуга «Примерка»: товары разных размеров на выбор с помощью возвратом</p></li>
+                     <li><p>Размещаем полную информацию о вашей продукции на сайте. Магазины-партнёры могут загружать ваши электронные каталоги автоматически</p></li>
+                     <li><p>Услуга «Предзаказ». Соберём предзаказ по вашим торговым маркам. Обработаем бланки к заявленному сроку</p></li>
+                   </ul>
+                   <blockquote class="d-flex align-items-center">
+                     <div class="quote-author-img">
+                       <img src="img/review-author-5.jpg" alt="">
+                     </div>
+                     <div class="quote__content">
+                       <p>Мы работаем с НОВА ТУР с 2017 года. Понравилось, что наша продукция участвует в общей предзаказной кампании. Отдел продвижения НОВА ТУР помог нам организовать вебинар и email рассылку о продукции Nordman.</p>
+                       <p class="quote__content-author">Евгений Худяков, продакт-менеджер отдела сбыта ООО «Псков-Полимер» ТМ Nordman</p>
+                     </div>
+                   </blockquote>
+                   <a href="#" class="bttn bttn--bolder">Получить условия</a>
+                 </div>
+                 <div class="c-card__fixed-img fixed-img--right col-md-5">
+                   <img src="img/img-destiny-manufacturer.jpg" alt="">
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-content-bottom">
+        <div class="container">
+          <div class="c-info-section">
+            <h2 class="c-info-section__title s-landing">Последние новости</h2>
+            <div class="row">
+              <div class="c-card-info col-md-4 mb-2 mb-md-0">
+                <a href="">
+                  <div class="c-card-info__image">
+                    <img src="img/news-dummy.jpg" alt="">
+                  </div>
+                  <div class="c-card-info__date">15.11.2017</div>
+                  <div class="c-card-info__title">Акция Счастливый случай</div>
+                </a>
+                <p class="c-card-info__teaser">Акция «Счастливый случай» действует в период с 15 ноября 2017 г. по 15 января 2018 г. Снижение уровня рекомендованных розничных цен (РРЦ) составит от 6 до 33%, в зависимости от модели.</p>
+              </div>
+              <div class="c-card-info col-md-4 mb-2 mb-md-0">
+                <a href="">
+                  <div class="c-card-info__image">
+                    <img src="img/news-dummy.jpg" alt="">
+                  </div>
+                  <div class="c-card-info__date">15.11.2017</div>
+                  <div class="c-card-info__title">Акция Счастливый случай</div>
+                </a>
+                <p class="c-card-info__teaser">Акция «Счастливый случай» действует в период с 15 ноября 2017 г. по 15 января 2018 г. Снижение уровня рекомендованных розничных цен (РРЦ) составит от 6 до 33%, в зависимости от модели.</p>
+              </div>
+              <div class="c-card-info col-md-4">
+                <a href="">
+                  <div class="c-card-info__image">
+                    <img src="img/news-dummy.jpg" alt="">
+                  </div>
+                  <div class="c-card-info__date">15.11.2017</div>
+                  <div class="c-card-info__title">Акция Счастливый случай</div>
+                </a>
+                <p class="c-card-info__teaser">Акция «Счастливый случай» действует в период с 15 ноября 2017 г. по 15 января 2018 г. Снижение уровня рекомендованных розничных цен (РРЦ) составит от 6 до 33%, в зависимости от модели.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="l-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-2 mb-2 mb-md-0">
+          <a class="l-footer__logo">
+            <img src="svg/logo-white.svg" alt="">
+          </a>
+          <div class="l-footer__copyright">ООО «Нова Тур»<br /> © 2017</div>
+        </div>
+        <div class="col-md-3 mb-2 mb-md-0">
+          <div class="txt-list-items-wrap">
+            <div class="txt-list-items__title">Отдел сопровождения продаж</div>
+            <ul class="txt-list-items h-no-mark">
+              <li><a href="tel:+7(495)984-08-50">+7(495) 984-08-50</a></li>
+              <li><a href="mailto:info@novatour.ru">info@novatour.ru</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-md-0">
+          <div class="txt-list-items-wrap">
+            <div class="txt-list-items__title">Техподдержка</div>
+            <ul class="txt-list-items h-no-mark">
+              <li><a href="#">Как заказать?</a></li>
+              <li><a href="#">Как пользоваться?</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-4 h-text-right">
+          <div class="l-footer__contacts">
+            <div class="link-wrap">
+              <a href="http://novatour.ru" target="_blank">novatour.ru</a>
+              <div class="link-wrap__sub">Розничный сайт<br/> NOVA TOUR</div>
+            </div>
+            <div class="c-socials d-flex">
+              <a href="#" class="c-social__item c-social__item--vk"></a>
+              <a href="#" class="c-social__item c-social__item--fb"></a>
+              <a href="#" class="c-social__item c-social__item--you"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script type="text/javascript" src="/frontend/build/manifest.js"></script>
+<script type="text/javascript" src="/frontend/build/vendor.js"></script>
+<script type="text/javascript" src="/frontend/build/pages/index/noauth/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.c-info-section {
+	margin-bottom: 40px;
+}
+.c-info-section--blue {
+	color: #FFF;
+	background: $cerulean;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	.c-info-section__title {
+		color: #FFF;
+	}
+}
+.c-info-section__title {
+	text-align: center;
+}
+.c-info-section__teaser {
+	margin: 0 auto 55px;
+	text-align: center;
+	max-width: 50em;
+}
+.c-info-section__img {
+	text-align: center;
+}

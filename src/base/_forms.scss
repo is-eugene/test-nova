@@ -1,0 +1,13 @@
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+	box-sizing: border-box;
+	font-size: 14px;
+	min-height: 30px;
+  background: #fff;
+  border: 1px solid #c2cad8;
+  padding: 4px 6px;
+  border-radius: $base-border-radius;
+}

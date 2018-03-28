@@ -1,0 +1,56 @@
+.icon-user {
+	background: svg-load('svg/icon-user.svg') no-repeat center center;
+	width: 22px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.icon-burger {
+	vertical-align: middle;
+	margin: -4px 5px 0 0;
+	width: 15px;
+	height: 13px;
+	background: svg-load('svg/icon-menu-dark.svg') no-repeat 0 0;
+}
+.icon-wishlist {
+	width: 15px;
+	height: 15px;
+	margin: 4px 10px 0 0;
+	background: svg-load('svg/icon-wishlist.svg') no-repeat center center;
+}
+.icon-compare {
+	width: 15px;
+	height: 15px;
+	margin: 5px 10px 0 0;
+	background: svg-load('svg/icon-compare.svg') no-repeat center center;
+}
+.icon-bag {
+	width: 27px;
+	height: 28px;
+	margin: 0 17px 0 -30px;
+	background: svg-load('svg/icon-bag.svg') no-repeat center center;
+}
+.icon-orders {
+	width: 27px;
+	height: 28px;
+	margin: 0 17px 0 -30px;
+	background: svg-load('svg/icon-orders.svg') no-repeat center center;
+}
+.icon-settlements {
+	width: 27px;
+	height: 28px;
+	margin: 0 17px 0 -30px;
+	background: svg-load('svg/icon-settlements.svg') no-repeat center center;
+}
+.icon-preorder {
+	width: 27px;
+	height: 28px;
+	margin: 0 17px 0 -30px;
+	background: svg-load('svg/icon-preorder.svg') no-repeat center center;
+}
+	
+@each $icon in $auth-icons {
+  .#{$icon} {
+    background-image: svg-load('svg/#{$icon}.svg');
+  }
+}

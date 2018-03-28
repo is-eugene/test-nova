@@ -1,0 +1,140 @@
+a:not(.bttn) {
+  text-decoration: none;
+  color: $blue;
+}
+p, ul {
+	font-size: 15px;
+	line-height: 1.75em;
+	max-width: 56em;
+	margin: 0 0 15px;
+}
+ul {
+	padding: 0 0 0 20px;
+	li {
+		list-style: none;
+		position: relative;
+		padding: 0;
+		margin: 0 0 15px;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			background: $cerulean;
+			top: 10px;
+			left: -17px;
+			border-radius: 50%;
+			
+		}
+	}
+	&.s-smaller {
+		li:before {
+			top: 7px;
+		}
+		li, p {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	font: $base-font;
+	font-weight: bold;
+	line-height: 1;
+	&.s-landing {
+  	letter-spacing: 2.2px;
+		font-family: 'Gilroy';
+		text-transform: uppercase;
+	}
+}
+h1, .h1-style {
+	font-size: $phone_h1FS;
+	margin: .4em 0 .3em;
+	&.s-landing {
+		color: $cerulean;
+	}
+}
+h2, .h2-style {
+	font-size: $phone_h2FS;
+	&.s-landing {
+		color: $langing-h-color;
+	}
+}
+h3, .h3-style {
+	text-transform: none;
+	font-size: $phone_h3FS;
+	&.s-landing {
+		color: $langing-h-color;
+	}
+}
+h4, .h4-style {
+	text-transform: none;
+	font-size: $phone_h4FS;
+	&.s-landing {
+		color: $cerulean;
+	}
+}
+h4, .h4-style,
+h5, .h5-style,
+h6, .h6-style {
+	margin: 1.5em 0 .4em;
+}
+h5, .h5-style {
+	font-size: $phone_h5FS;
+}
+h6, .h6-style {
+	font-size: $phone_h6FS;
+}
+/* Tablet */
+@include media(">phone", "<tablet") {
+	h1, .h1-style {
+		font-size: $tablet_h1FS;
+	}
+	h2, .h2-style {
+		font-size: $tablet_h2FS;
+	}
+	h3, .h3-style {
+		font-size: $tablet_h3FS;
+	}
+	h4, .h4-style {
+		font-size: $tablet_h4FS;
+	}
+	h5, .h5-style {
+		font-size: $tablet_h5FS;
+	}
+	h6, .h6-style {
+		font-size: $tablet_h6FS;
+	}
+}
+@include media(">desktop") {
+	h1, .h1-style {
+		font-size: $h1FS;
+		&.s-landing {
+			font-size: $h1-heading-FS;
+		}
+	}
+	h2, .h2-style {
+		font-size: $h2FS;
+		&.s-landing {
+			font-size: $h2-heading-FS;
+		}
+	}
+	h3, .h3-style {
+		font-size: $h3FS;
+		&.s-landing {
+			font-size: $h3-heading-FS;
+		}
+	}
+	h4, .h4-style {
+		font-size: $h4FS;
+		&.s-landing {
+			font-size: $h4-heading-FS;
+		}
+	}
+	h5, .h5-style {
+		font-size: $h5FS;
+	}
+	h6, .h6-style {
+		font-size: $h6FS;
+	}
+}

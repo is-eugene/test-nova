@@ -1,0 +1,55 @@
+.c-card {
+	@extend .ext-base-block;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.c-card__content {
+	padding: 30px 15px 30px 55px;
+	> h3 {
+		margin: 0 0 5px;
+	}
+	.intro {
+		font-size: 18px;
+		font-weight: bold;
+		color: $langing-h-color;
+	}
+}
+.c-card__fixed-img {
+	position: relative;
+	overflow: hidden;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 70px;
+		background-image: linear-gradient(to right, #fff, rgba(216, 216, 216, 0));
+	}
+	&.fixed-img--left {
+		&:after {
+			right: -1px;
+			left: 70px;
+			transform: scale(-1, 1);
+		}
+	}
+	img {
+		display: block;
+		position: absolute;
+		right: 15px;
+		left: 15px;
+		bottom: 0;
+		top: 0;
+		height: 100%;
+		min-width: 100%;
+		max-width: none;
+		object-fit: cover;
+	}
+}
+.c-card--banner {
+	padding: 7px;
+	margin-bottom: 40px;
+	img {
+		display: block;
+	}
+}

@@ -1,0 +1,28 @@
+.c-main-search-form {
+  position: relative;
+}
+input.c-main-search-form__input {
+  height: 40px;
+  width: 100%;
+  padding: 7px 19px 8px; 
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  &.js-has-text + label,
+  &:focus + label {
+    opacity: 0;
+  }
+}
+.c-main-search-form__label {
+  color: $text-gray;
+  position: absolute;
+  transition: opacity .3s ease-out;
+  top: 7px;
+  left: 34px;
+}
+.c-main-search-form--auth {
+  display: flex;
+  form {
+    flex-grow: 2;
+  }
+}

@@ -1,0 +1,25 @@
+.c-info-tiles {
+	margin-bottom: 40px;
+}
+.c-info-tile {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $base-border-color;
+}
+.c-info-tile__link {
+	font-weight: bold;
+	display: flex;
+	margin-bottom: 7px;
+	[class*="icon-"] {
+		flex: 0 0 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 23px 22px;
+    margin: -3px 10px 0 0;
+	}
+}
+.c-info-tile__all {
+	font-size: 14px;
+	margin: 15px 0 0px 40px;
+}

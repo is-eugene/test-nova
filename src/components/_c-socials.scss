@@ -1,0 +1,23 @@
+.c-socials {
+	position: relative;
+}
+.c-social__item {
+	display: inline-block;
+	vertical-align: top;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right: 15px;
+	height: 20px;
+}
+.c-social__item--vk {
+	width: 35px;
+	background-image: svg-load('svg/icon-social-vk.svg');
+}
+.c-social__item--fb {
+	width: 11px;
+	background-image: svg-load('svg/icon-social-fb.svg');
+}
+.c-social__item--you {
+	width: 25px;
+	background-image: svg-load('svg/icon-social-you.svg');
+}

@@ -1,0 +1,99 @@
+.f-row {
+  margin-bottom: 15px;
+  input {
+    width: 100%;
+  }
+}
+.bttn {
+  @include button-style($light-grass-green, $mid-green);
+  font: $base-font;
+  border: none;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 14px 24px 14px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background: $mid-green;
+  }
+  &.bttn--dark {
+    @include button-style($blue-grey, $slate);
+    &:hover,
+    &:active {
+      background: $slate;
+    }
+  }
+  &.bttn--min {
+    padding: 5px 14px 5px 14px;
+    font-weight: normal;
+  }
+  &.bttn--mid {
+  	font-weight: normal;
+    padding: 7px 29px 7px 29px;
+    height: 40px;
+  }
+  &.bttn--big {
+  	font-size: 18px;
+  	font-weight: bold;
+		padding: 15px 24px 15px 24px;
+  }
+  &.bttn--bl-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  &.bttn--bolder {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+  }
+  &.bttn--lime {
+    color: #000;
+  	@include button-style(#c6e6a5, #a9cf7e);
+    &:hover,
+    &:active {
+      background: #a9cf7e;
+    }
+  }
+  &.bttn--light-orange {
+    color: #000;
+  	@include button-style(#ffe9b0, #facb8e);
+    &:hover,
+    &:active {
+      background: #facb8e;
+    }
+  }
+  &.bttn--light-blue {
+    color: #000;
+  	@include button-style(#95daf2, #6ec3e4);
+    &:hover,
+    &:active {
+      background: #6ec3e4;
+    }
+  }
+  &.bttn--light-gray {
+    color: #000;
+  	@include button-style(#eef2f7, #d3ddea);
+    &:hover,
+    &:active {
+      background: #d3ddea;
+    }
+  }
+}
+
+.preorder-status {
+	display: flex;
+	.title {
+		font-weight: bold;
+		color: #FFF;
+		margin-right: 15px;
+		color: $blue;
+	}
+	.status {
+		font-size: 12px;
+		color: $text-dark-gray;
+	}
+}

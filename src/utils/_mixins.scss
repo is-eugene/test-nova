@@ -1,0 +1,4 @@
+@mixin button-style($start-color, $end-color, $radius: $base-border-radius) {
+  border-radius: $radius;
+  background: linear-gradient(to bottom, $start-color 0%, $end-color 100%);
+}

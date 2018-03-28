@@ -1,0 +1,36 @@
+.c-card-tiny {
+	padding: 0 15px;
+	max-width: 190px;
+}
+.c-card-tiny__image {
+	border-radius: $base-border-radius;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 5px;
+	background: #fff;
+	margin-bottom: 20px;
+	img {
+		display: block;
+	}
+}
+.c-card-tiny__title {
+	padding-left: 10px;
+	font-weight: bold;
+}
+.c-card-tiny__descr {
+	padding-left: 10px;
+	line-height: 20px;
+}
+.c-info-section--blue {
+	.c-card-tiny {
+		color: #FFF;
+	}
+	.c-card-tiny__title {
+		color: #FFF;
+	}
+	.c-card-tiny__descr {
+		color: #FFF;
+	}
+}

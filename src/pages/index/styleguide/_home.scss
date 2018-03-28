@@ -1,0 +1,117 @@
+.p-front-invitation {
+	/* overflow: hidden; */
+	.container {
+		position: relative;
+		
+	}
+}
+.p-front-invitation__bgr {
+	position: absolute;
+	top: -218px;
+	left: 50%;
+	margin-left: 250px;
+	right: 0;
+	z-index: -1;
+	max-width: none;
+	transform: translate(-50%, 0);
+}
+.p-front-invitation-text {
+	p {
+		max-width: 32em;
+	}
+}
+.p-front-invitation-slogan {
+	position: absolute;
+	right: 61px;
+	top: 8px;
+	p {
+		margin: 0;
+		max-width: 230px;
+		font-style: italic;
+		line-height: 1.43;
+		font-size: 14px;
+		color: $blue-dop;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 46px;
+			height: 27px;
+			top: 10px;
+			left: -56px;
+			background: url(img/line.png) no-repeat 0 0;
+		}
+	}
+}
+.p-front__destinations {
+	margin-bottom: 40px;
+}
+.p-front__destinations-item {
+	p {
+		max-width: 20em;
+	}
+}
+.p-front__destinations-detail-chain {
+	p {
+		font-size: 20px;
+		font-family: 'Gilroy';
+		letter-spacing: 1px;
+		font-weight: 600;
+		font-style: italic;
+		margin-bottom: 0;
+	}
+	.chain-items {
+		font-size: 32px;
+		font-family: 'Gilroy';
+		letter-spacing: 1px;
+		font-weight: 600;
+		font-style: italic;
+		line-height: 40px;
+		margin-bottom: 30px;
+	}
+}
+.p-front__destinations-detail-short {
+	padding-left: 60px;
+	.intro {
+		font-size: 20px;
+		font-family: 'Gilroy';
+		line-height: 25px;
+		font-weight: 500;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+	.destination-point {
+		display: flex;
+		flex: 0 0 48%;
+		margin-top: 20px;
+	}
+	[class*="icon-"] {
+		flex: 0 0 50px;
+		height: 50px;
+		margin-right: 10px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin-top: -5px;
+	}
+	p {
+		font-weight: 600;
+		line-height: 1.33em;
+		margin-bottom: 0;
+	}
+}
+.icon-company {
+	background-image: url(./svg/icon-company.svg);
+	background-size: 29.54px 38.23px;
+}
+.icon-discounts {
+	background-image: url(./svg/icon-discounts.svg);
+	background-size: 36.56px 36.35px;
+}
+.icon-site {
+	background-image: url(./svg/icon-site.svg);
+	background-size: 36.27px 32.25px;
+}
+.icon-logistic {
+	background-image: url(./svg/icon-logistic.svg);
+	background-size: 38.96px 35.42px;
+}
